@@ -1,6 +1,6 @@
 # ITP 2020/2021 TA Class
 
-Introduction to programming 2020/2021, Github Exercise Repo
+Introduction to programming 2020/2021
 
 ## How to use
 To submit an assignment please create pull request from your fork, please refer to INITIAL SETUP section for further instruction.
@@ -58,7 +58,7 @@ git push
 ```
 You may push changes a few times to the server, you may also do a few commits before pushing, remember that commits acts like a snapshot so that you can get back to a version of your code in the future.
 
-If you think that all is good, you can create a pull request to merge your repo with the main repo in https://github.com/raveltan
+If you think that all is good, you can create a pull request to merge your repo with the main repo in https://github.com/raveltan/itp-git.git
 
 > Make sure your code doesn't interfere with your friend's and you don't delete any other part of the repo. Any pull request that doesn't comply with this rules will not be approved.
 
