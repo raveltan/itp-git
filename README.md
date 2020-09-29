@@ -3,7 +3,7 @@
 Introduction to programming 2020/2021, Github Exercise Repo
 
 ## How to use
-To submit please create pull request from your fork, please refer to INITIAL SETUP section for further instruction.
+To submit an assignment please create pull request from your fork, please refer to INITIAL SETUP section for further instruction.
 
 On if your repo is not in sync with the main repo, please check UPDATING YOUR REPO (PUlLING NEW CHANGES). 
 
