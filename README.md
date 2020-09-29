@@ -16,7 +16,7 @@ Please create a new folder inside the exercise folder, with the following name f
 
 For example:
 ```
-Ravel-Tanjaya-8888888888
+Ravel_Tanjaya:8888888888
 ```
 
 Then store your answer there
