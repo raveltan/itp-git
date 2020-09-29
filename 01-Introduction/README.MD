@@ -5,7 +5,7 @@ In this assignment you'll be creating a simple program in python,
 
 > Make sure to put it inside a folder with {name}:{studentID} format, please refer back to the main readme for mor information.
 
-Submission Deadline : ** 8 October 2020 **
+Submission Deadline : **8 October 2020**
 
 For question please contact me, Thank you
  
