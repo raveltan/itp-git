@@ -8,8 +8,7 @@ To submit an assignment please create pull request from your fork, please refer 
 On if your repo is not in sync with the main repo, please check UPDATING YOUR REPO (PUlLING NEW CHANGES). 
 
 Each exercise will be provided on a folder and will require you to do the specified task,
-Please put your answer into the Answer folder inside the Exercise folder,
-Name you folder with the following format:
+Please create a new folder inside the exercise folder, with the following name format:
 
 ```
 {name}:{studentID}
@@ -19,6 +18,8 @@ For example:
 ```
 Ravel-Tanjaya-8888888888
 ```
+
+Then store your answer there
 
 ### Initial Setup
 
