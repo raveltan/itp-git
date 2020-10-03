@@ -23,7 +23,7 @@ For example:
 Ravel_Tanjaya-8888888888
 ```
 
-Then store your answer there
+Then store your answer inside that folder
 
 ### Initial Setup
 
