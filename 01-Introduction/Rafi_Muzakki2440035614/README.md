@@ -1,4 +1,5 @@
 # exercise 1
--Nme: Rafi Muzakki
+-Name: Rafi Muzakki
+
 -StudentID:2440035614
 
