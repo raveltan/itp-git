@@ -19,7 +19,7 @@ if (ans=='Yes'):
         if(b==num):
             break
         else:
-            print('Here is you lucky numbers:',a)
+            print('Here is your lucky number:',a)
             print('Congratulations, you got a', list[a])
         b+=1
     print(' ')
