@@ -1,6 +1,6 @@
-import GroupWork.Character_Banner as chara
-import GroupWork.gacha_weapon_banner as weap
-import GroupWork.standardbanner as stand
+import Character_Banner as chara
+import gacha_weapon_banner as weap
+import standardbanner as stand
 
 def Draw():
     print("---Welcome to the poorly made Gacha System---")
