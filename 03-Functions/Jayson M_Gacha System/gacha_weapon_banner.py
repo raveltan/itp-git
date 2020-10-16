@@ -32,6 +32,8 @@ def weapon_banner(n):
                 weapon_type = random.choice(weapon_type_list)
                 weapon_tier = random.choices(weapon_tier_list, weights=weight)
                 recieved.append([weapon_tier, weapon_type])
+            pity90 = 0
+            
         else:
             weapon_type = random.choice(weapon_type_list)
             weapon_tier = [4]
@@ -48,10 +50,12 @@ def weapon_banner(n):
             weapon_type = random.choice(weapon_type_list)
             weapon_tier = [5]
             recieved.append([weapon_tier, weapon_type])
+            pity90 = 0
         elif pity10 >= 10:
             weapon_type = random.choice(weapon_type_list)
             weapon_tier = [4]
             recieved.append([weapon_tier, weapon_type])
+            pity = 0
         else:
             weapon_type = random.choice(weapon_type_list)
             weapon_tier = random.choices(weapon_tier_list, weights=weight)
