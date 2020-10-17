@@ -1,6 +1,6 @@
-import Character_Banner as chara
-import gacha_weapon_banner as weap
-import standardbanner as stand
+import JaysonMGachaSystem.Character_Banner as chara
+import JaysonMGachaSystem.gacha_weapon_banner as weap
+import JaysonMGachaSystem.standardbanner as stand
 
 def Draw():
     print("---Welcome to the poorly made Gacha System---")
@@ -18,6 +18,7 @@ def Draw():
 
 while True:
     Draw()
+
     BChoice = eval(input("Your Choice of Banner = "))
     if BChoice == 1:
         chara.pull()
