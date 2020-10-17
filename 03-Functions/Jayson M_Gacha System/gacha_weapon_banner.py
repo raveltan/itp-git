@@ -1,12 +1,9 @@
 import random
 from typing import List
 
-total = 0
-pity10 = 0
-pity90 = 0
 
-def weapon_banner(n):
-    global pity10, pity90, total
+
+def weapon_banner(n, pity4,pity5):
     weapon_type_list = ["Sword", "Spear", "Halberd", "Pike", "Bow", "Gun",
                         "Hammer", "Axe", "Kunai", "Shuriken", "Great Sword(2-handed)",
                         "Greathammer(2-handed)", "Throwing Knife", "Staff", "Scepter"]
@@ -18,7 +15,7 @@ def weapon_banner(n):
 
 
     if n == 10: #ten pulls\
-        if pity90 >= 90:
+        if pity5 > 90:
             #5star
             weapon_type = random.choice(weapon_type_list)
             weapon_tier = [5]
@@ -32,8 +29,6 @@ def weapon_banner(n):
                 weapon_type = random.choice(weapon_type_list)
                 weapon_tier = random.choices(weapon_tier_list, weights=weight)
                 recieved.append([weapon_tier, weapon_type])
-            pity90 = 0
-            
         else:
             weapon_type = random.choice(weapon_type_list)
             weapon_tier = [4]
@@ -42,46 +37,68 @@ def weapon_banner(n):
                 weapon_type = random.choice(weapon_type_list)
                 weapon_tier = random.choices(weapon_tier_list, weights=weight)
                 recieved.append([weapon_tier, weapon_type])
-        pity90 += 10
-        total += 10
+
+
 
     elif n == 1: #single pull
-        if pity90 >=90:
+        if pity5 >90:
             weapon_type = random.choice(weapon_type_list)
             weapon_tier = [5]
             recieved.append([weapon_tier, weapon_type])
-            pity90 = 0
-        elif pity10 >= 10:
+        elif pity4 >= 10:
             weapon_type = random.choice(weapon_type_list)
             weapon_tier = [4]
             recieved.append([weapon_tier, weapon_type])
-            pity = 0
         else:
             weapon_type = random.choice(weapon_type_list)
             weapon_tier = random.choices(weapon_tier_list, weights=weight)
             recieved.append([weapon_tier, weapon_type])
-        pity10 += 1
-        pity90 += 1
-        total += 1
 
-    for result in range(len(recieved)):
-        print("You got", recieved[result][0], "-star", recieved[result][1])
+
+    return recieved
+
 
 def weaponpull():
+    total = 0
+    Guaranteed_4 = 0
+    Guaranteed_5 = 0
+
     while True:
-        print("welcome to the weapon banner")
-        print("-----------------------------------")
-        print("total pulls = ", total)
+        print("----------Standard Banner----------")
+        print("total =", total)
+        print("Guaranteed 4 =", Guaranteed_4)
+        print("Guaranteed 5 =", Guaranteed_5)
         print("-----------------------------------")
         print("Your Choice of")
         print("1. 1x Draw")
         print("2. 10x Draw")
         print("type '3' to go back")
         print("-----------------------------------")
+
         DChoice = eval(input("Draw choice = "))
         if DChoice == 1:
-            weapon_banner(1)
+            total += 1
+            Guaranteed_4 += 1
+            Guaranteed_5 += 1
+            Collect = weapon_banner(1,Guaranteed_4, Guaranteed_5)
+            print("you got ", Collect[0][0],"-star ", Collect[0][1])
+            if Guaranteed_4 >= 10:
+                Guaranteed_4 = 0
+            if Guaranteed_5 >= 90:
+                Guaranteed_5 = 0
+
         elif DChoice == 2:
-            weapon_banner(10)
+            total += 10
+            Guaranteed_5 += 10
+            Collect10 = weapon_banner(10,Guaranteed_4, Guaranteed_5)
+            for result in Collect10:
+                print("You got", result[0], "-star", result[1])
+            if Guaranteed_4 >= 10:
+                Guaranteed_4 = 0
+            if Guaranteed_5 >= 90:
+                Guaranteed_5 = 0
+
         elif DChoice == 3:
             break
+
+
