@@ -3,7 +3,6 @@ import random
 
 def start(n_time):
     count = 0
-    score = 0
     wins = 0
     loss = 0
     draw = 0
@@ -18,19 +17,16 @@ def start(n_time):
         if user_input == rps[0] and computer_input == rps[2]:
             print("Player smashed Computer with Rock!")
             print("")
-            score += 1
             wins += 1
             count += 1
         elif user_input == rps[1] and computer_input == rps[0]:
             print("Player wrapped Computer with Paper!")
             print("")
-            score += 1
             wins += 1
             count += 1
         elif user_input == rps[2] and computer_input == rps[1]:
             print("Player cut Computer with Scissors!")
             print("")
-            score += 1
             wins += 1
             count += 1
         elif user_input == rps[2] and computer_input == rps[0]:
