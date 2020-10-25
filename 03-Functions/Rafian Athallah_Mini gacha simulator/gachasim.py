@@ -1,3 +1,4 @@
+#group: Rafian, Alif, Rendy, Karen
 from random import randint
 
 
