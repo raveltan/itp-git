@@ -1,3 +1,6 @@
+import math
+
+
 def deg():
     import math
     print("This is Degrees Calculator")

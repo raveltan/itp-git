@@ -1,5 +1,6 @@
 from math import sqrt
 
+
 # User Input for the intended choice
 def vec_choice():
     print("Welcome to Vector Calculator")
@@ -24,8 +25,8 @@ def vec_choice():
 
 # Vector Projection
 def vproj():
-    a, a2 = input("Enter a1 and a2: ")
-    b, b2 = input("Enter b1 and b2: ")
+    a, a2 = input("a1 and a2: ")
+    b, b2 = input("b1 and b2: ")
     a = int(a)
     a2 = int(a2)
     b = int(b)
@@ -46,8 +47,8 @@ def vproj():
 
 # Determinant
 def detr():
-    a, a2 = input("Enter a1 and a2: ")
-    b, b2 = input("Enter b1 and b2: ")
+    a, a2 = input("a 1 and a 2: ")
+    b, b2 = input("b 1 and b 2: ")
     a = int(a)
     a2 = int(a2)
     b = int(b)
@@ -55,17 +56,12 @@ def detr():
 
     detCalc = (a * b2) - (a2 * b)
     print("The areal area of Parallelogram:", detCalc)
-    triChoice = input("Do you want to calculate the area of the triangle?: ")
-
-    if triChoice == "yes" or 'y':
-        result = detCalc * 0.5
-        print("The area of the triangle is", result)
 
 
 # Vector Degrees
 def vdeg():
-    a, a2 = input("Enter a1 and a2: ").split()
-    b, b2 = input("Enter b1 and b2: ").split()
+    a, a2 = input("a 1 and a 2: ").split()
+    b, b2 = input("b 1 and b 2: ").split()
     a = int(a)
     a2 = int(a2)
     b = int(b)
@@ -79,8 +75,8 @@ def vdeg():
 
 # Dot Product
 def dot():
-    a, a2 = input("Enter a1 and a2: ").split()
-    b, b2 = input("Enter b1 and b2: ").split()
+    a, a2 = input("a 1 and a : ").split()
+    b, b2 = input("b 1 and b 2: ").split()
     a = int(a)
     a2 = int(a2)
     b = int(b)

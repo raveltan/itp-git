@@ -32,4 +32,4 @@ def calc():
         print("The result is ", result)
 
     else:
-        print("Something went wrong.")
+        print("Error")
